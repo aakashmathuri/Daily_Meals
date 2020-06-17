@@ -5,7 +5,7 @@ class CategoryMealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'The Recipes For The Category dkjf',
+        'The Recipes For The Category',
       ),
     );
   }
