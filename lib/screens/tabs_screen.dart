@@ -27,7 +27,9 @@ class _TabsScreenState extends State<TabsScreen> {
               icon: Icon(Icons.star),
               text: 'Favorites',
               child: Column(
-                children: <Widget>[Text('Hello')],
+                children: <Widget>[
+                  Text('Hello'),
+                ],
               ),
             ),
           ]),
