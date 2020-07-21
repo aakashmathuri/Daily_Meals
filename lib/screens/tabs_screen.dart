@@ -9,7 +9,17 @@ class TabsScreen extends StatefulWidget {
 }
 
 class _TabsScreenState extends State<TabsScreen> {
-  void _selectPage(int index) {}
+  final List<Widget> _page = [
+    CategoriesScreen(),
+    FavoritesScreen(),
+  ];
+  int _selectedPageIndex = 0;
+
+  void _selectPage(int index) {
+    setState(() {
+      _selectedPageIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +27,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text('Meals'),
       ),
-      body: null,
+      body: _page[_selectedPageIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
         backgroundColor: Theme.of(context).primaryColor,
