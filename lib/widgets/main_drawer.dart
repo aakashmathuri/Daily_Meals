@@ -43,37 +43,13 @@ class MainDrawer extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          ListTile(
-            leading: Icon(
-              Icons.restaurant,
-              size: 26,
-            ),
-            title: Text(
-              'Meals',
-              style: TextStyle(
-                  fontFamily: 'RobotoCondensed',
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold),
-            ),
-            onTap: () {
-              //...
-            },
+          buildListTile(
+            'Meals',
+            Icons.restaurant,
           ),
-          ListTile(
-            leading: Icon(
-              Icons.settings,
-              size: 26,
-            ),
-            title: Text(
-              'Filters',
-              style: TextStyle(
-                  fontFamily: 'RobotoCondensed',
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold),
-            ),
-            onTap: () {
-              //...
-            },
+          buildListTile(
+            'Filters',
+            Icons.settings,
           ),
         ],
       ),
