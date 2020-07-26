@@ -11,6 +11,13 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
+            child: Text(
+              'My Dishes',
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                fontSize: 30,
+              ),
+            ),
           ),
         ],
       ),
