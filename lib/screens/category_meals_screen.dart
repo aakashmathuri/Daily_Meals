@@ -1,9 +1,10 @@
-import '../widgets/meal_item.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/meal_item.dart';
 import '../dummy_data.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
-  static const routeName = 'category-meals';
+  static const routeName = '/category-meals';
   // final String categoryId;
   // final String categoryTitle;
 
